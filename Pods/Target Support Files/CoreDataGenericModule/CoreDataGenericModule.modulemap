@@ -1,0 +1,6 @@
+framework module CoreDataGenericModule {
+  umbrella header "CoreDataGenericModule-umbrella.h"
+
+  export *
+  module * { export * }
+}

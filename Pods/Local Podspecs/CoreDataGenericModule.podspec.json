@@ -1,0 +1,29 @@
+{
+  "name": "CoreDataGenericModule",
+  "version": "1.0.0",
+  "summary": "Core Data generic module for persist encrypted object",
+  "description": "Core Data generic module for persist encrypted object",
+  "homepage": "https://github.com/ArtCC/CoreDataGenericModule",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Arturo Carretero Calvo": "artccmail@gmail.com"
+  },
+  "social_media_url": "https://twitter.com/_artcc_",
+  "platforms": {
+    "ios": null
+  },
+  "source": {
+    "git": "https://github.com/ArtCC/CoreDataGenericModule.git",
+    "tag": "1.0.0"
+  },
+  "source_files": "Classes/**/*.{swift}",
+  "resources": "Classes/Model/*.xcdatamodeld",
+  "dependencies": {
+    "RNCryptor": [
+      "~> 4.0.0-beta"
+    ]
+  }
+}
