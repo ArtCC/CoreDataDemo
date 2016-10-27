@@ -23,7 +23,7 @@
   "resources": "Classes/Model/*.xcdatamodeld",
   "dependencies": {
     "RNCryptor": [
-      "~> 4.0.0-beta"
+      "~> 5.0.0"
     ]
   }
 }

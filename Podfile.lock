@@ -1,7 +1,7 @@
 PODS:
   - CoreDataGenericModule (1.0.0):
-    - RNCryptor (~> 4.0.0-beta)
-  - RNCryptor (4.0.0)
+    - RNCryptor (~> 5.0.0)
+  - RNCryptor (5.0.1)
 
 DEPENDENCIES:
   - CoreDataGenericModule (from `https://github.com/ArtCC/CoreDataGenericModule.git`)
@@ -12,13 +12,13 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   CoreDataGenericModule:
-    :commit: 99d99373ecbce2bb67c2e691bff42d9509633e0c
+    :commit: 08fd47a7f04339e81bf0b489c8ddeabcfa0f2ac5
     :git: https://github.com/ArtCC/CoreDataGenericModule.git
 
 SPEC CHECKSUMS:
-  CoreDataGenericModule: abfe42065ea9278f7d5fe47d0e2caeb802f30c2d
-  RNCryptor: 59d6483908115af5c12b884db23392024e52a5fe
+  CoreDataGenericModule: aa900c6f8b489fd051bb3328f222ae558bf1cdfa
+  RNCryptor: 2e352a488779d1a9184ab629be22a7c5bc84acb5
 
-PODFILE CHECKSUM: 06b12534d5e9b3f56e097cf90043359dd1b07185
+PODFILE CHECKSUM: b78bf161be89bff2fafc0cb7d22950b543040ff8
 
 COCOAPODS: 1.1.0.rc.2

@@ -15,7 +15,7 @@ class ViewController: UIViewController {
         self.title = "Core Data"
         
         // Core Data init
-        CDGCoreDataDataController.sharedInstance
+        _ = CDGCoreDataDataController.sharedInstance
         // Core Data delete and create dummy data test
         deleteAllCoreData()
         createDataInCoreData()
@@ -45,18 +45,16 @@ class ViewController: UIViewController {
         let pepito: User = User.init(idCard: "123456789", name: "Pepito Grillo")
         if CDGCoreDataEngine.saveObject(pepito, passwordForEncrypted: "password") {
             if let dict = CDGCoreDataEngine.getObjectWithIdentifier("123456789", passwordForEncripted: "password") {
-                if let user: User = User(dictionary: dict) {
-                    string = "\nCreate object in Core Data (User model test):\n User id: \(user.idCard) \n User name: \(user.name)"
-                }
+                let user: User = User(dictionary: dict)
+                string = "\nCreate object in Core Data (User model test):\n User id: \(user.idCard) \n User name: \(user.name)"
             }
         }
         // Save another object
         let peter: User = User.init(idCard: "987654321", name: "Peter pan")
         if CDGCoreDataEngine.saveObject(peter, passwordForEncrypted: "password") {
             if let dict = CDGCoreDataEngine.getObjectWithIdentifier("987654321", passwordForEncripted: "password") {
-                if let user: User = User(dictionary: dict) {
-                    string = string.stringByAppendingString("\n\nCreate object in Core Data (User model test):\n User id: \(user.idCard) \n User name: \(user.name)")
-                }
+                let user: User = User(dictionary: dict)
+                string = string.appendingFormat("\n\nCreate object in Core Data (User model test):\n User id: \(user.idCard) \n User name: \(user.name)")
             }
         }
         // open alert with result
