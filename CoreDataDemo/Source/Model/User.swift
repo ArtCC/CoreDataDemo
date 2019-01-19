@@ -44,6 +44,7 @@ class User: NSObject, CDGCoreDataProtocol {
     func saveAsDictionary() -> [String: String] {
         
         return [
+
             "idCard" : idCard,
             "name" : name
         ]

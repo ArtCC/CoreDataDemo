@@ -25,26 +25,38 @@ open class CDGCoreDataEngine: NSObject {
     open class func saveObject(_ object: CDGCoreDataProtocol, passwordForEncrypted: String) -> Bool {
         // Create an instance of our managedObjectContext
         let managedContext = CDGCoreDataDataController.sharedInstance.managedObjectContext
+        
         // We set up our entity by selecting the entity and context that we're targeting
         let entity = NSEntityDescription.insertNewObject(forEntityName: "Entity", into: managedContext)
+        
         // Dictionary from object model
         var dict = object.saveAsDictionary()
+        
         // Identifier from object model
         let identifier = object.uniqueIdentifier()
+        
         // Save object in Core Data model with identifier like primary key
         entity.setValue(identifier, forKey: "idEntity")
+        
         // Convert dictionary to data
         let data : Data = NSKeyedArchiver.archivedData(withRootObject: dict)
+        
         // Encrypted or not data object
         var cipherData: Data = RNCryptor.encrypt(data: data, withPassword: passwordForEncrypted)
+        
         // Add object in Core Data context
         entity.setValue(cipherData, forKey: "dataEntity")
+        
         // Save in bd
         do {
+            
             try managedContext.save()
+            
             return true
         } catch let error as NSError {
+            
             fatalError("Failed to save entity: \(error)")
+            
             return false
         }
     }
@@ -60,16 +72,32 @@ open class CDGCoreDataEngine: NSObject {
         let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Entity")
         fetchRequest.predicate = fetchPredicate
         fetchRequest.returnsObjectsAsFaults = false
+        
         do {
+            
             let fetchedEntities = try managedContext.fetch(fetchRequest)
-            for entity in fetchedEntities {
-                managedContext.delete(entity as! NSManagedObject)
-                try! managedContext.save()
+            
+            if !fetchedEntities.isEmpty {
+             
+                for entity in fetchedEntities {
+                    
+                    guard let entDelete = entity as? NSManagedObject else {
+                        
+                        return false
+                    }
+                    
+                    managedContext.delete(entDelete)
+                    
+                    try! managedContext.save()
+                }
             }
         } catch let error as NSError {
+            
             fatalError("Failed to delete entity: \(error)")
+            
             return false
         }
+        
         return true
     }
     
@@ -84,26 +112,65 @@ open class CDGCoreDataEngine: NSObject {
         let fetchPredicate = NSPredicate(format: "idEntity == %@", identifier)
         let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Entity")
         fetchRequest.predicate = fetchPredicate
+        
         do {
+            
             let fetchedObject = try managedContext.fetch(fetchRequest)
-            // Decrypted object
-            var dictionary: [String : String] = ["" : ""]
-            let object = fetchedObject[0] as! NSManagedObject
-            if let idEntity = object.value(forKey: "idEntity"), let dataEntity = object.value(forKey: "dataEntity") {
-                // Decryption
-                do {
-                    let originalData: Data = try RNCryptor.decrypt(data: (dataEntity as! NSData) as Data, withPassword: passwordForEncripted)
-                    // Convert data to dictionary
-                    dictionary = (NSKeyedUnarchiver.unarchiveObject(with: originalData)! as? [String : String])!
-                    return dictionary
-                } catch {
-                    print(error)
+            
+            if !fetchedObject.isEmpty {
+                
+                // Decrypted object
+                var dictionary: [String : String] = ["" : ""]
+                
+                guard let object = fetchedObject[0] as? NSManagedObject else {
+                    
+                    return nil
+                }
+                
+                if let idEntity = object.value(forKey: "idEntity"),
+                    let dataEntity = object.value(forKey: "dataEntity") {
+                    
+                    // Decryption
+                    do {
+                        
+                        guard let dEntity = dataEntity as? NSData else {
+                            
+                            return nil
+                        }
+                        
+                        let originalData: Data = try RNCryptor.decrypt(data: dEntity as Data,
+                                                                       withPassword: passwordForEncripted)
+                        
+                        // Convert data to dictionary
+                        
+                        if let d = NSKeyedUnarchiver.unarchiveObject(with: originalData) {
+                            
+                            guard let dict = d as? [String : String] else {
+                                
+                                return nil
+                            }
+                            
+                            dictionary = dict
+                        }
+                        
+                        if !dictionary.isEmpty {
+                            
+                            return dictionary
+                        }
+                        
+                        return nil
+                    } catch {
+                        
+                        print(error)
+                    }
                 }
             }
-            return nil
         } catch let error as NSError {
+            
             fatalError("Failed to fetch entity: \(error)")
         }
+        
+        return nil
     }
     
     /**
@@ -115,29 +182,65 @@ open class CDGCoreDataEngine: NSObject {
     open class func getObjectsFromCoreData(_ entityName: String, passwordForEncripted: String) -> Array<[String : String]> {
         let managedContext = CDGCoreDataDataController.sharedInstance.managedObjectContext
         let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: entityName)
+        
         // Array for return with data or empty
         var array: Array<[String : String]> = []
+        
         do {
+            
             let fetchedObject = try managedContext.fetch(fetchRequest)
-            // Decrypted object
-            var dictionary: [String : String] = ["" : ""]
-            for object in fetchedObject {
-                if let idEntity = (object as AnyObject).value(forKey: "idEntity"), let dataEntity = (object as AnyObject).value(forKey: "dataEntity") {
-                    // Decryption
-                    do {
-                        let originalData: Data = try RNCryptor.decrypt(data: (dataEntity as! NSData) as Data, withPassword: passwordForEncripted)
-                        // Convert data to dictionary
-                        dictionary = (NSKeyedUnarchiver.unarchiveObject(with: originalData)! as? [String : String])!
-                        array.insert(dictionary, at: 0)
-                    } catch {
-                        print(error)
+            
+            if !fetchedObject.isEmpty {
+             
+                // Decrypted object
+                var dictionary: [String : String] = ["" : ""]
+                
+                for object in fetchedObject {
+                    
+                    if let idEntity = (object as AnyObject).value(forKey: "idEntity"),
+                        let dataEntity = (object as AnyObject).value(forKey: "dataEntity") {
+                        
+                        // Decryption
+                        do {
+                            
+                            guard let dEntity = dataEntity as? NSData else {
+                                
+                                return []
+                            }
+                            
+                            let originalData: Data = try RNCryptor.decrypt(data: dEntity as Data,
+                                                                           withPassword: passwordForEncripted)
+                            
+                            if let d = NSKeyedUnarchiver.unarchiveObject(with: originalData) {
+                                
+                                // Convert data to dictionary
+                                guard let dict = d as? [String : String] else {
+                                    
+                                    return []
+                                }
+                                
+                                dictionary = dict
+                            }
+                            
+                            if !dictionary.isEmpty {
+                                
+                                array.insert(dictionary, at: 0)
+                            }
+                        } catch {
+                            
+                            print(error)
+                        }
                     }
                 }
+                
+                return array
             }
-            return array
         } catch {
+            
             fatalError("Failed to fetch entity: \(error)")
         }
+        
+        return []
     }
     
     /**
@@ -148,16 +251,28 @@ open class CDGCoreDataEngine: NSObject {
         let managedContext = CDGCoreDataDataController.sharedInstance.managedObjectContext
         let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Entity")
         fetchRequest.returnsObjectsAsFaults = false
+        
         do {
+            
             let results = try managedContext.fetch(fetchRequest)
+            
             for managedObject in results {
-                let managedObjectData:NSManagedObject = managedObject as! NSManagedObject
+                
+                guard let managedObjectData:NSManagedObject = managedObject as? NSManagedObject else {
+                    
+                    return false
+                }
+                
                 managedContext.delete(managedObjectData)
             }
+            
             print("All entities delete from Core Data")
+            
             return true
         } catch let error as NSError {
+            
             print("Delete all data in Object entity with error : \(error) \(error.userInfo)")
+            
             return false
         }
     }
