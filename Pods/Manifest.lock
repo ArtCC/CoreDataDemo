@@ -7,7 +7,7 @@ DEPENDENCIES:
   - CoreDataGenericModule (from `https://github.com/ArtCC/CoreDataGenericModule.git`)
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  https://github.com/CocoaPods/Specs.git:
     - RNCryptor
 
 EXTERNAL SOURCES:
@@ -25,4 +25,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: 712254cbc2a35bfc26309e3788eef40fb4d6012f
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.8.3
