@@ -13,6 +13,7 @@ import CoreDataGenericModule
  User class
  */
 class User: NSObject, CDGCoreDataProtocol {
+    
     /**
      Id card for user object model
      */
@@ -42,16 +43,13 @@ class User: NSObject, CDGCoreDataProtocol {
     }
     
     func saveAsDictionary() -> [String: String] {
-        
         return [
-
             "idCard" : idCard,
             "name" : name
         ]
     }
     
     func uniqueIdentifier() -> String {
-        
         return idCard
     }
 }

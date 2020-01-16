@@ -7,23 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		28C7975413394BE77D0F78E0C24DC95E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D96C49DF7FF7707B3CDC684D60AEDBE0 /* Foundation.framework */; };
-		342520A1CB696D562DF596DE87EDA19F /* RNCryptor-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E01D485258421452FE1D25ADEED56195 /* RNCryptor-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		446CFF77149FA5E200B2DF058493A139 /* CoreDataGenericModule-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CE544A362919BDC0431AB54C7B54D787 /* CoreDataGenericModule-dummy.m */; };
-		44EAE554C9D32D0F646901996B54EFD2 /* CDGCoreDataDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B739C112AFF42C95B5453387070B3BAB /* CDGCoreDataDataController.swift */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		257A6FE657846CCD8C8E67606C31BA4F /* CoreDataGenericModule-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D5F52A1956494E2352D979AD18798CD7 /* CoreDataGenericModule-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		27FB7B22182CF0B9CE275E3371C7194E /* Entity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 640300A2707357221BED2F1F19692873 /* Entity.swift */; };
+		2DF5AF3E1513FEA95DB18DF92ED19E91 /* RNCryptor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2FF220C067AE51B60F77E36DEEF10CB /* RNCryptor.framework */; };
+		31FE6F3A98F80EF7AA90CAC994F66F8A /* CDGModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4164807F2636652B8B95701C473B64E1 /* CDGModel.xcdatamodeld */; };
+		471F34DA26BF50A003B5441E90323667 /* CDGCoreDataEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C5F86213400DC51FB08B52A5F73CC6 /* CDGCoreDataEngine.swift */; };
+		48CAD73DDE9DCBEA3AA0A42632C4F281 /* RNCryptor-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B085F04A183EF1F2F5CFE3C1E15BB780 /* RNCryptor-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4981BB0AEE6DEB284F96AE6184B27E88 /* Pods-CoreDataDemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = ECDD0B2E46ED768C3A29D5B52BB9A356 /* Pods-CoreDataDemo-dummy.m */; };
-		4B899ED53B59D279D58E864AF34ED4B5 /* RNCryptor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2FF220C067AE51B60F77E36DEEF10CB /* RNCryptor.framework */; };
 		5A97DD79EEDEEBB975628452BE2AF328 /* Pods-CoreDataDemo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F48B5258002D286AEB7E242887F0B15 /* Pods-CoreDataDemo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6ACF12564BDEE0736CE1756AD8D8ED8E /* Entity.swift in Sources */ = {isa = PBXBuildFile; fileRef = E03953704ACB912DB7999208490B24C1 /* Entity.swift */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		6BF1B2D51A7E5B9052EE0F6CAA4DA862 /* RNCryptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8913E71AE58C540F02858C89F2A5CC72 /* RNCryptor.swift */; };
-		76283BC56CBAB2B32CBBC69444F239F8 /* CDGCoreDataEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5010724FF9CC8FD070D5E5F431FBF9F8 /* CDGCoreDataEngine.swift */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		774AC348BAE1264DF6FBFFD8D7491ACE /* CoreDataGenericModule-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9AE8F5AA126C4D94BB1F8E451A1B3E78 /* CoreDataGenericModule-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7D499C757CE7B5946192BD53ABACCEBA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D96C49DF7FF7707B3CDC684D60AEDBE0 /* Foundation.framework */; };
-		9308F42706EAE9A37DC0578D96D52609 /* Entity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF53192302EE128FE672863380B2D40F /* Entity+CoreDataProperties.swift */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		95CBB19A70849452500A342722485C1B /* CDGModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E72325469853563E53BEE660896DB65B /* CDGModel.xcdatamodeld */; };
-		A28665D77C56D0CD5860E926F0225E96 /* CDGCoreDataProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C74B53548140B2676F157B0628E62F /* CDGCoreDataProtocol.swift */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		D100F8D7820DD74D6F62DD64486FFCAC /* RNCryptor-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3765471BD007AC6EE02CFA4E19B57BF3 /* RNCryptor-dummy.m */; };
-		E655B118938A78C26B55E47A6054C91F /* RNCryptor.h in Headers */ = {isa = PBXBuildFile; fileRef = 604070EACD4F11E26E63EED90EFC5118 /* RNCryptor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		968E39BE6A2211091395E138962F06D8 /* RNCryptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90AAA3FDA8E0CA7404923C69C249DF75 /* RNCryptor.swift */; };
+		9C137D8DB02E7375AAB9999297960D95 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8DAED9CFF81E51863FE12A60ED05E5B /* Utils.swift */; };
+		9C9B8B179070DADFD7EF496E62CC5D2A /* Entity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB0070CF72EF07EFF3E912C4ECBACF1 /* Entity+CoreDataProperties.swift */; };
+		A26D31BEF48B0F0E0D7266499743C88F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D96C49DF7FF7707B3CDC684D60AEDBE0 /* Foundation.framework */; };
+		AAEF38792FFF99A16B0AE5FC892E768E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D96C49DF7FF7707B3CDC684D60AEDBE0 /* Foundation.framework */; };
+		CB3BDC62BF18586AC3028D14822551A6 /* RNCryptor-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 95D105B392F11987EF0C676B8B35F0DE /* RNCryptor-dummy.m */; };
+		DD9D6F7CBF56F23DAEFB973483982828 /* CoreDataGenericModule-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CF7C37FD3130D5577E54E01AD762580 /* CoreDataGenericModule-dummy.m */; };
+		E226AD77032B1D1D79A2174211B46EC4 /* CDGCoreDataProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D404DAF8B50DEA27BA99EFADDB2A458 /* CDGCoreDataProtocol.swift */; };
+		F33686BC846481BD4663680D7242DCE8 /* CDGCoreDataDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8E6E1E11610114D423B9B221BE23C8 /* CDGCoreDataDataController.swift */; };
 		FFF8ACD2401CF663F3CA78BDF0ECE3D8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D96C49DF7FF7707B3CDC684D60AEDBE0 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
@@ -35,7 +35,7 @@
 			remoteGlobalIDString = 7D7AB7B747EE521C4A4F2853E464FCC2;
 			remoteInfo = CoreDataGenericModule;
 		};
-		315CAF81D2ACCE9FDF9F7927A81B585F /* PBXContainerItemProxy */ = {
+		4D7291EC7146019EFEBD9DE16CB61531 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -52,44 +52,52 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		156CA1D01CD973FF533D6B34C08BB2E6 /* CoreDataGenericModule-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "CoreDataGenericModule-Info.plist"; sourceTree = "<group>"; };
-		17C74B53548140B2676F157B0628E62F /* CDGCoreDataProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CDGCoreDataProtocol.swift; path = Classes/CDGCoreDataProtocol.swift; sourceTree = "<group>"; };
-		1CC462A0B1B6656099CC3C704FF73F26 /* CoreDataGenericModule.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = CoreDataGenericModule.modulemap; sourceTree = "<group>"; };
+		0C36C2A9320F9AA877CD2B0A1E822717 /* RNCryptor-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RNCryptor-prefix.pch"; sourceTree = "<group>"; };
 		2540218F43F17BF5C82EBB59E28E35FA /* Pods-CoreDataDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CoreDataDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		27994CF9A8935A9CEFF4E3A12306DA93 /* CoreDataGenericModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CoreDataGenericModule.framework; path = CoreDataGenericModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B7FAD6EF498CB3050E1CA2B7E658569 /* RNCryptor-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "RNCryptor-Info.plist"; sourceTree = "<group>"; };
 		2CBFBA373AE3B3B6E88EBCA026F7497B /* Pods-CoreDataDemo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CoreDataDemo-acknowledgements.markdown"; sourceTree = "<group>"; };
-		3765471BD007AC6EE02CFA4E19B57BF3 /* RNCryptor-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "RNCryptor-dummy.m"; sourceTree = "<group>"; };
+		2D67A856338938AB3D166905D8DFB204 /* CoreDataGenericModule.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CoreDataGenericModule.xcconfig; sourceTree = "<group>"; };
 		40FEFD414F39F7578B882C3A7D540BBB /* Pods-CoreDataDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CoreDataDemo.release.xcconfig"; sourceTree = "<group>"; };
-		5010724FF9CC8FD070D5E5F431FBF9F8 /* CDGCoreDataEngine.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CDGCoreDataEngine.swift; path = Classes/CDGCoreDataEngine.swift; sourceTree = "<group>"; };
+		44ECE1EABD409F44D2EBCCF18291E274 /* RNCryptor.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RNCryptor.xcconfig; sourceTree = "<group>"; };
+		46C86ED96720A13B7604E6B99FEC2E0F /* RNCryptor.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = RNCryptor.modulemap; sourceTree = "<group>"; };
+		4D404DAF8B50DEA27BA99EFADDB2A458 /* CDGCoreDataProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CDGCoreDataProtocol.swift; path = Classes/CDGCoreDataProtocol.swift; sourceTree = "<group>"; };
 		50488F0806821BD0D1890C5BF74C5C4E /* Pods-CoreDataDemo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CoreDataDemo-acknowledgements.plist"; sourceTree = "<group>"; };
-		53BFF4BDAC34066FDC2B8F5105103AA0 /* RNCryptor.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = RNCryptor.modulemap; sourceTree = "<group>"; };
-		604070EACD4F11E26E63EED90EFC5118 /* RNCryptor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RNCryptor.h; path = Sources/Cryptor/include/RNCryptor.h; sourceTree = "<group>"; };
+		640300A2707357221BED2F1F19692873 /* Entity.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Entity.swift; path = Classes/Model/Entity.swift; sourceTree = "<group>"; };
+		641EADA15F09CB680163A1190F209186 /* CoreDataGenericModule-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CoreDataGenericModule-prefix.pch"; sourceTree = "<group>"; };
 		6DF170327F2980702EA4A1EBFAC2C209 /* Pods-CoreDataDemo-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CoreDataDemo-Info.plist"; sourceTree = "<group>"; };
 		7246F946D52BDD54953DE7B2581173CD /* Pods_CoreDataDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_CoreDataDemo.framework; path = "Pods-CoreDataDemo.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		79DB8FEF7D7543646A73639B9CE2CBFD /* RNCryptor-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "RNCryptor-Info.plist"; sourceTree = "<group>"; };
-		8913E71AE58C540F02858C89F2A5CC72 /* RNCryptor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RNCryptor.swift; path = Sources/RNCryptor/RNCryptor.swift; sourceTree = "<group>"; };
-		97258DEAD24ABA916F909E590E7D34AA /* CDGModel.xcdatamodel */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.xcdatamodel; path = CDGModel.xcdatamodel; sourceTree = "<group>"; };
-		9AE8F5AA126C4D94BB1F8E451A1B3E78 /* CoreDataGenericModule-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CoreDataGenericModule-umbrella.h"; sourceTree = "<group>"; };
+		74BC460A7167D8FAE0BA7429001EC288 /* CDGModel.xcdatamodel */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.xcdatamodel; path = CDGModel.xcdatamodel; sourceTree = "<group>"; };
+		7AB0070CF72EF07EFF3E912C4ECBACF1 /* Entity+CoreDataProperties.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Entity+CoreDataProperties.swift"; path = "Classes/Model/Entity+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		8CF7C37FD3130D5577E54E01AD762580 /* CoreDataGenericModule-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CoreDataGenericModule-dummy.m"; sourceTree = "<group>"; };
+		90AAA3FDA8E0CA7404923C69C249DF75 /* RNCryptor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RNCryptor.swift; path = Sources/RNCryptor/RNCryptor.swift; sourceTree = "<group>"; };
+		95D105B392F11987EF0C676B8B35F0DE /* RNCryptor-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "RNCryptor-dummy.m"; sourceTree = "<group>"; };
+		96C5F86213400DC51FB08B52A5F73CC6 /* CDGCoreDataEngine.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CDGCoreDataEngine.swift; path = Classes/CDGCoreDataEngine.swift; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9F48B5258002D286AEB7E242887F0B15 /* Pods-CoreDataDemo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CoreDataDemo-umbrella.h"; sourceTree = "<group>"; };
-		A2CB1DACB43AF8D09D12B142C948B7B4 /* CoreDataGenericModule-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CoreDataGenericModule-prefix.pch"; sourceTree = "<group>"; };
-		B641C4E0039FD5BC525427A58004A0D7 /* RNCryptor.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RNCryptor.xcconfig; sourceTree = "<group>"; };
-		B739C112AFF42C95B5453387070B3BAB /* CDGCoreDataDataController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CDGCoreDataDataController.swift; path = Classes/CDGCoreDataDataController.swift; sourceTree = "<group>"; };
-		CE544A362919BDC0431AB54C7B54D787 /* CoreDataGenericModule-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CoreDataGenericModule-dummy.m"; sourceTree = "<group>"; };
-		D237B4CD6922156D3167C5910FE36E23 /* RNCryptor-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RNCryptor-prefix.pch"; sourceTree = "<group>"; };
+		AEC3024E96A6E197497B15679AEF7C9E /* CoreDataGenericModule-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "CoreDataGenericModule-Info.plist"; sourceTree = "<group>"; };
+		B085F04A183EF1F2F5CFE3C1E15BB780 /* RNCryptor-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RNCryptor-umbrella.h"; sourceTree = "<group>"; };
+		BE033F4AD02400DA97A9622E3A939C3E /* CoreDataGenericModule.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = CoreDataGenericModule.modulemap; sourceTree = "<group>"; };
 		D2FF220C067AE51B60F77E36DEEF10CB /* RNCryptor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RNCryptor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5F52A1956494E2352D979AD18798CD7 /* CoreDataGenericModule-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CoreDataGenericModule-umbrella.h"; sourceTree = "<group>"; };
+		D8DAED9CFF81E51863FE12A60ED05E5B /* Utils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Utils.swift; path = Classes/Utils.swift; sourceTree = "<group>"; };
 		D96C49DF7FF7707B3CDC684D60AEDBE0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		E01D485258421452FE1D25ADEED56195 /* RNCryptor-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RNCryptor-umbrella.h"; sourceTree = "<group>"; };
-		E03953704ACB912DB7999208490B24C1 /* Entity.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Entity.swift; path = Classes/Model/Entity.swift; sourceTree = "<group>"; };
-		E340A0018798595AEED1A23F54EB80F7 /* CoreDataGenericModule.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CoreDataGenericModule.xcconfig; sourceTree = "<group>"; };
 		E6526411EA6BCE8F24DF2417D1CD8A6F /* Pods-CoreDataDemo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CoreDataDemo-frameworks.sh"; sourceTree = "<group>"; };
 		ECDD0B2E46ED768C3A29D5B52BB9A356 /* Pods-CoreDataDemo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CoreDataDemo-dummy.m"; sourceTree = "<group>"; };
-		EF53192302EE128FE672863380B2D40F /* Entity+CoreDataProperties.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Entity+CoreDataProperties.swift"; path = "Classes/Model/Entity+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		EF8E6E1E11610114D423B9B221BE23C8 /* CDGCoreDataDataController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CDGCoreDataDataController.swift; path = Classes/CDGCoreDataDataController.swift; sourceTree = "<group>"; };
 		F6320389F628433B78C81FB217A0485D /* RNCryptor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = RNCryptor.framework; path = RNCryptor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA6B36364E29A8F47CD72B9198EE6F67 /* Pods-CoreDataDemo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-CoreDataDemo.modulemap"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		06460CE60185ED5EAA3CDC36170AEF84 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A26D31BEF48B0F0E0D7266499743C88F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0E0430C8A76A344495A5C66D6D3A893C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -98,39 +106,40 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A06C27620A6A9A99340B68E55A9C9E1F /* Frameworks */ = {
+		1CB0A4362EA2499E67D9B8A9923440C3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7D499C757CE7B5946192BD53ABACCEBA /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DD053D2727CB08AE5E6F71C33FFAC531 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				28C7975413394BE77D0F78E0C24DC95E /* Foundation.framework in Frameworks */,
-				4B899ED53B59D279D58E864AF34ED4B5 /* RNCryptor.framework in Frameworks */,
+				AAEF38792FFF99A16B0AE5FC892E768E /* Foundation.framework in Frameworks */,
+				2DF5AF3E1513FEA95DB18DF92ED19E91 /* RNCryptor.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		04097BD58325872F6E2609E7BB2A2AD9 /* CoreDataGenericModule */ = {
+		08BA075B2D891CA5983D35D673A6160A /* RNCryptor */ = {
 			isa = PBXGroup;
 			children = (
-				B739C112AFF42C95B5453387070B3BAB /* CDGCoreDataDataController.swift */,
-				5010724FF9CC8FD070D5E5F431FBF9F8 /* CDGCoreDataEngine.swift */,
-				17C74B53548140B2676F157B0628E62F /* CDGCoreDataProtocol.swift */,
-				E03953704ACB912DB7999208490B24C1 /* Entity.swift */,
-				EF53192302EE128FE672863380B2D40F /* Entity+CoreDataProperties.swift */,
-				94C658A756CB5B834A350FE82198AD13 /* Resources */,
-				DC159B0CF9FFA80CF03A54F3B4F15AE7 /* Support Files */,
+				90AAA3FDA8E0CA7404923C69C249DF75 /* RNCryptor.swift */,
+				1B1EC9527932732198FACECDC02CF0F7 /* Support Files */,
 			);
-			name = CoreDataGenericModule;
-			path = CoreDataGenericModule;
+			name = RNCryptor;
+			path = RNCryptor;
+			sourceTree = "<group>";
+		};
+		1B1EC9527932732198FACECDC02CF0F7 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				46C86ED96720A13B7604E6B99FEC2E0F /* RNCryptor.modulemap */,
+				44ECE1EABD409F44D2EBCCF18291E274 /* RNCryptor.xcconfig */,
+				95D105B392F11987EF0C676B8B35F0DE /* RNCryptor-dummy.m */,
+				2B7FAD6EF498CB3050E1CA2B7E658569 /* RNCryptor-Info.plist */,
+				0C36C2A9320F9AA877CD2B0A1E822717 /* RNCryptor-prefix.pch */,
+				B085F04A183EF1F2F5CFE3C1E15BB780 /* RNCryptor-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/RNCryptor";
 			sourceTree = "<group>";
 		};
 		3B8C39C831615A857AD76951A119B8C1 /* Pods-CoreDataDemo */ = {
@@ -159,46 +168,51 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		59DBB901CA9A08EB15742B11C0F73786 /* RNCryptor */ = {
+		4E83330C24E2CB553007BC969FD8CDC4 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				604070EACD4F11E26E63EED90EFC5118 /* RNCryptor.h */,
-				8913E71AE58C540F02858C89F2A5CC72 /* RNCryptor.swift */,
-				BC8AEC2949B5AD223DA6EA61C1095EBE /* Support Files */,
-			);
-			name = RNCryptor;
-			path = RNCryptor;
-			sourceTree = "<group>";
-		};
-		81676FFE60597B20FD55A6C3279F6BF5 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				04097BD58325872F6E2609E7BB2A2AD9 /* CoreDataGenericModule */,
-				59DBB901CA9A08EB15742B11C0F73786 /* RNCryptor */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		94C658A756CB5B834A350FE82198AD13 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				E72325469853563E53BEE660896DB65B /* CDGModel.xcdatamodeld */,
+				4164807F2636652B8B95701C473B64E1 /* CDGModel.xcdatamodeld */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
 		};
-		BC8AEC2949B5AD223DA6EA61C1095EBE /* Support Files */ = {
+		5A007074DE71F342A3ABCF99734FCB72 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				53BFF4BDAC34066FDC2B8F5105103AA0 /* RNCryptor.modulemap */,
-				B641C4E0039FD5BC525427A58004A0D7 /* RNCryptor.xcconfig */,
-				3765471BD007AC6EE02CFA4E19B57BF3 /* RNCryptor-dummy.m */,
-				79DB8FEF7D7543646A73639B9CE2CBFD /* RNCryptor-Info.plist */,
-				D237B4CD6922156D3167C5910FE36E23 /* RNCryptor-prefix.pch */,
-				E01D485258421452FE1D25ADEED56195 /* RNCryptor-umbrella.h */,
+				AF2C0A34E0C03E7CDDDC0E651E53A259 /* CoreDataGenericModule */,
+				08BA075B2D891CA5983D35D673A6160A /* RNCryptor */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8B173228EA5AE2DBDD6CB40C420B9AE9 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				BE033F4AD02400DA97A9622E3A939C3E /* CoreDataGenericModule.modulemap */,
+				2D67A856338938AB3D166905D8DFB204 /* CoreDataGenericModule.xcconfig */,
+				8CF7C37FD3130D5577E54E01AD762580 /* CoreDataGenericModule-dummy.m */,
+				AEC3024E96A6E197497B15679AEF7C9E /* CoreDataGenericModule-Info.plist */,
+				641EADA15F09CB680163A1190F209186 /* CoreDataGenericModule-prefix.pch */,
+				D5F52A1956494E2352D979AD18798CD7 /* CoreDataGenericModule-umbrella.h */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/RNCryptor";
+			path = "../Target Support Files/CoreDataGenericModule";
+			sourceTree = "<group>";
+		};
+		AF2C0A34E0C03E7CDDDC0E651E53A259 /* CoreDataGenericModule */ = {
+			isa = PBXGroup;
+			children = (
+				EF8E6E1E11610114D423B9B221BE23C8 /* CDGCoreDataDataController.swift */,
+				96C5F86213400DC51FB08B52A5F73CC6 /* CDGCoreDataEngine.swift */,
+				4D404DAF8B50DEA27BA99EFADDB2A458 /* CDGCoreDataProtocol.swift */,
+				640300A2707357221BED2F1F19692873 /* Entity.swift */,
+				7AB0070CF72EF07EFF3E912C4ECBACF1 /* Entity+CoreDataProperties.swift */,
+				D8DAED9CFF81E51863FE12A60ED05E5B /* Utils.swift */,
+				4E83330C24E2CB553007BC969FD8CDC4 /* Resources */,
+				8B173228EA5AE2DBDD6CB40C420B9AE9 /* Support Files */,
+			);
+			name = CoreDataGenericModule;
+			path = CoreDataGenericModule;
 			sourceTree = "<group>";
 		};
 		C641D255C41404F475BD232A10D8D428 /* Products */ = {
@@ -216,7 +230,7 @@
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				4280806334090A6EDB75E1598D644706 /* Frameworks */,
-				81676FFE60597B20FD55A6C3279F6BF5 /* Pods */,
+				5A007074DE71F342A3ABCF99734FCB72 /* Pods */,
 				C641D255C41404F475BD232A10D8D428 /* Products */,
 				DB147640FE9B58E529ECDE50AE3DEC9F /* Targets Support Files */,
 			);
@@ -230,20 +244,6 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		DC159B0CF9FFA80CF03A54F3B4F15AE7 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				1CC462A0B1B6656099CC3C704FF73F26 /* CoreDataGenericModule.modulemap */,
-				E340A0018798595AEED1A23F54EB80F7 /* CoreDataGenericModule.xcconfig */,
-				CE544A362919BDC0431AB54C7B54D787 /* CoreDataGenericModule-dummy.m */,
-				156CA1D01CD973FF533D6B34C08BB2E6 /* CoreDataGenericModule-Info.plist */,
-				A2CB1DACB43AF8D09D12B142C948B7B4 /* CoreDataGenericModule-prefix.pch */,
-				9AE8F5AA126C4D94BB1F8E451A1B3E78 /* CoreDataGenericModule-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/CoreDataGenericModule";
-			sourceTree = "<group>";
-		};
 		E3C2C05B944AAC025F1907496326F41E /* iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -255,23 +255,6 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		2159733A073B625C985837F5C8E16FD3 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				774AC348BAE1264DF6FBFFD8D7491ACE /* CoreDataGenericModule-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		33F758D322FF136D5237C1E77118BA04 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				342520A1CB696D562DF596DE87EDA19F /* RNCryptor-umbrella.h in Headers */,
-				E655B118938A78C26B55E47A6054C91F /* RNCryptor.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		550CC58616B8425547678065B2E9C415 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -280,17 +263,33 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		7A6538FE3B9AF8E993D9D61645CFEF5D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48CAD73DDE9DCBEA3AA0A42632C4F281 /* RNCryptor-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98D3637ECE744F6FDE32106628EFE530 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				257A6FE657846CCD8C8E67606C31BA4F /* CoreDataGenericModule-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		05CCA2AD142519DF6FED0979BACBC149 /* RNCryptor */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 65F5BA9C73878C1DE66CAA019FAF4BD9 /* Build configuration list for PBXNativeTarget "RNCryptor" */;
+			buildConfigurationList = E3B61739B289F476E2BA74A0AD33239D /* Build configuration list for PBXNativeTarget "RNCryptor" */;
 			buildPhases = (
-				33F758D322FF136D5237C1E77118BA04 /* Headers */,
-				FC8B9A2C66A8D82B33B816729E8424E0 /* Sources */,
-				A06C27620A6A9A99340B68E55A9C9E1F /* Frameworks */,
-				8E2566A15E99863CB6CEEDE56B624FC0 /* Resources */,
+				7A6538FE3B9AF8E993D9D61645CFEF5D /* Headers */,
+				AEA7064368E83329165FCE2E1E59726F /* Sources */,
+				06460CE60185ED5EAA3CDC36170AEF84 /* Frameworks */,
+				9A96AFC0B49FDBBB6408C69149695A00 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -303,17 +302,17 @@
 		};
 		7D7AB7B747EE521C4A4F2853E464FCC2 /* CoreDataGenericModule */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F992654B8B886D4D257405A7EAB10CF7 /* Build configuration list for PBXNativeTarget "CoreDataGenericModule" */;
+			buildConfigurationList = C9E17BFEAEA4D427146C229A6667699A /* Build configuration list for PBXNativeTarget "CoreDataGenericModule" */;
 			buildPhases = (
-				2159733A073B625C985837F5C8E16FD3 /* Headers */,
-				2293E369ACE7FCC956EE60F85791429C /* Sources */,
-				DD053D2727CB08AE5E6F71C33FFAC531 /* Frameworks */,
-				1E7188B532D7C590B88A701A557C2F75 /* Resources */,
+				98D3637ECE744F6FDE32106628EFE530 /* Headers */,
+				682DC064217D6F8A56B3FC6321CAF35C /* Sources */,
+				1CB0A4362EA2499E67D9B8A9923440C3 /* Frameworks */,
+				D93B846F9C6F7704BD56F3377B79100C /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				7D0C17177690C07EC42D463051F54937 /* PBXTargetDependency */,
+				5300010A6DD82E6AFA24A1603F05E2C8 /* PBXTargetDependency */,
 			);
 			name = CoreDataGenericModule;
 			productName = CoreDataGenericModule;
@@ -369,21 +368,21 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		1E7188B532D7C590B88A701A557C2F75 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		8E2566A15E99863CB6CEEDE56B624FC0 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		93B4D25D44126BD018E29C9AF920984A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A96AFC0B49FDBBB6408C69149695A00 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D93B846F9C6F7704BD56F3377B79100C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -393,17 +392,18 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		2293E369ACE7FCC956EE60F85791429C /* Sources */ = {
+		682DC064217D6F8A56B3FC6321CAF35C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				44EAE554C9D32D0F646901996B54EFD2 /* CDGCoreDataDataController.swift in Sources */,
-				76283BC56CBAB2B32CBBC69444F239F8 /* CDGCoreDataEngine.swift in Sources */,
-				A28665D77C56D0CD5860E926F0225E96 /* CDGCoreDataProtocol.swift in Sources */,
-				95CBB19A70849452500A342722485C1B /* CDGModel.xcdatamodeld in Sources */,
-				446CFF77149FA5E200B2DF058493A139 /* CoreDataGenericModule-dummy.m in Sources */,
-				9308F42706EAE9A37DC0578D96D52609 /* Entity+CoreDataProperties.swift in Sources */,
-				6ACF12564BDEE0736CE1756AD8D8ED8E /* Entity.swift in Sources */,
+				F33686BC846481BD4663680D7242DCE8 /* CDGCoreDataDataController.swift in Sources */,
+				471F34DA26BF50A003B5441E90323667 /* CDGCoreDataEngine.swift in Sources */,
+				E226AD77032B1D1D79A2174211B46EC4 /* CDGCoreDataProtocol.swift in Sources */,
+				31FE6F3A98F80EF7AA90CAC994F66F8A /* CDGModel.xcdatamodeld in Sources */,
+				DD9D6F7CBF56F23DAEFB973483982828 /* CoreDataGenericModule-dummy.m in Sources */,
+				9C9B8B179070DADFD7EF496E62CC5D2A /* Entity+CoreDataProperties.swift in Sources */,
+				27FB7B22182CF0B9CE275E3371C7194E /* Entity.swift in Sources */,
+				9C137D8DB02E7375AAB9999297960D95 /* Utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -415,23 +415,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FC8B9A2C66A8D82B33B816729E8424E0 /* Sources */ = {
+		AEA7064368E83329165FCE2E1E59726F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D100F8D7820DD74D6F62DD64486FFCAC /* RNCryptor-dummy.m in Sources */,
-				6BF1B2D51A7E5B9052EE0F6CAA4DA862 /* RNCryptor.swift in Sources */,
+				CB3BDC62BF18586AC3028D14822551A6 /* RNCryptor-dummy.m in Sources */,
+				968E39BE6A2211091395E138962F06D8 /* RNCryptor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		7D0C17177690C07EC42D463051F54937 /* PBXTargetDependency */ = {
+		5300010A6DD82E6AFA24A1603F05E2C8 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = RNCryptor;
 			target = 05CCA2AD142519DF6FED0979BACBC149 /* RNCryptor */;
-			targetProxy = 315CAF81D2ACCE9FDF9F7927A81B585F /* PBXContainerItemProxy */;
+			targetProxy = 4D7291EC7146019EFEBD9DE16CB61531 /* PBXContainerItemProxy */;
 		};
 		BC4661C0F543742173ABD740B19E9A4F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -476,6 +476,38 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		0FA49F5664EB956A90630E0FE60E32DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 44ECE1EABD409F44D2EBCCF18291E274 /* RNCryptor.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/RNCryptor/RNCryptor-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/RNCryptor/RNCryptor-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/RNCryptor/RNCryptor.modulemap";
+				PRODUCT_MODULE_NAME = RNCryptor;
+				PRODUCT_NAME = RNCryptor;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -547,41 +579,11 @@
 			};
 			name = Debug;
 		};
-		5034B5F5690E82EFE775E231011E45A9 /* Debug */ = {
+		4B6C058A074F45FD4542374581FCEF29 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B641C4E0039FD5BC525427A58004A0D7 /* RNCryptor.xcconfig */;
+			baseConfigurationReference = 2D67A856338938AB3D166905D8DFB204 /* CoreDataGenericModule.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/RNCryptor/RNCryptor-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/RNCryptor/RNCryptor-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/RNCryptor/RNCryptor.modulemap";
-				PRODUCT_MODULE_NAME = RNCryptor;
-				PRODUCT_NAME = RNCryptor;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		72E4EC07C8A960BEC0A5AFB603FBE8E1 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = E340A0018798595AEED1A23F54EB80F7 /* CoreDataGenericModule.xcconfig */;
-			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -594,7 +596,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/CoreDataGenericModule/CoreDataGenericModule-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/CoreDataGenericModule/CoreDataGenericModule-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/CoreDataGenericModule/CoreDataGenericModule.modulemap";
 				PRODUCT_MODULE_NAME = CoreDataGenericModule;
@@ -602,17 +604,16 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.1;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
-		A2B5BA49F209EBFAA473FA9001F5A335 /* Release */ = {
+		A33A9DC04112ED49D624EB5F3C66EB05 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B641C4E0039FD5BC525427A58004A0D7 /* RNCryptor.xcconfig */;
+			baseConfigurationReference = 44ECE1EABD409F44D2EBCCF18291E274 /* RNCryptor.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -634,13 +635,12 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
 		AC56A2EB206DB4E2C000AD36B3ADC774 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -736,10 +736,11 @@
 			};
 			name = Release;
 		};
-		B1F1B8BE5C9C1F3E01E3A2CB00A1A2C0 /* Debug */ = {
+		D69D1FCAF2D9977B67CCE2F91D00751D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E340A0018798595AEED1A23F54EB80F7 /* CoreDataGenericModule.xcconfig */;
+			baseConfigurationReference = 2D67A856338938AB3D166905D8DFB204 /* CoreDataGenericModule.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -752,7 +753,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/CoreDataGenericModule/CoreDataGenericModule-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/CoreDataGenericModule/CoreDataGenericModule-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/CoreDataGenericModule/CoreDataGenericModule.modulemap";
 				PRODUCT_MODULE_NAME = CoreDataGenericModule;
@@ -760,12 +761,13 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.1;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
@@ -788,20 +790,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		65F5BA9C73878C1DE66CAA019FAF4BD9 /* Build configuration list for PBXNativeTarget "RNCryptor" */ = {
+		C9E17BFEAEA4D427146C229A6667699A /* Build configuration list for PBXNativeTarget "CoreDataGenericModule" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5034B5F5690E82EFE775E231011E45A9 /* Debug */,
-				A2B5BA49F209EBFAA473FA9001F5A335 /* Release */,
+				4B6C058A074F45FD4542374581FCEF29 /* Debug */,
+				D69D1FCAF2D9977B67CCE2F91D00751D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F992654B8B886D4D257405A7EAB10CF7 /* Build configuration list for PBXNativeTarget "CoreDataGenericModule" */ = {
+		E3B61739B289F476E2BA74A0AD33239D /* Build configuration list for PBXNativeTarget "RNCryptor" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B1F1B8BE5C9C1F3E01E3A2CB00A1A2C0 /* Debug */,
-				72E4EC07C8A960BEC0A5AFB603FBE8E1 /* Release */,
+				A33A9DC04112ED49D624EB5F3C66EB05 /* Debug */,
+				0FA49F5664EB956A90630E0FE60E32DE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -809,10 +811,10 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		E72325469853563E53BEE660896DB65B /* CDGModel.xcdatamodeld */ = {
+		4164807F2636652B8B95701C473B64E1 /* CDGModel.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				97258DEAD24ABA916F909E590E7D34AA /* CDGModel.xcdatamodel */,
+				74BC460A7167D8FAE0BA7429001EC288 /* CDGModel.xcdatamodel */,
 			);
 			name = CDGModel.xcdatamodeld;
 			path = Classes/Model/CDGModel.xcdatamodeld;

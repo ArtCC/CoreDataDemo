@@ -10,6 +10,7 @@ import UIKit
 import CoreDataGenericModule
 
 class ViewController: UIViewController {
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "Core Data"
@@ -23,17 +24,13 @@ class ViewController: UIViewController {
     }
     
     // MARK: - Core Data test
-    
     /**
      Delete all Core Data model (Delete entities)
      */
     func deleteAllCoreData() {
-        
         if CDGCoreDataEngine.deleteAllInCoreData() {
-            
             print("\nAll delete objects correct from Core Data")
         } else {
-            
             print("\nAll delete objects incorrect from Core Data")
         }
     }
@@ -47,11 +44,8 @@ class ViewController: UIViewController {
         
         // Save an object
         let pepito: User = User.init(idCard: "123456789", name: "Pepito Grillo")
-        
         if CDGCoreDataEngine.saveObject(pepito, passwordForEncrypted: "password") {
-            
             if let dict = CDGCoreDataEngine.getObjectWithIdentifier("123456789", passwordForEncripted: "password") {
-                
                 let user: User = User(dictionary: dict)
                 string = "\nCreate object in Core Data (User model test):\n User id: \(user.idCard) \n User name: \(user.name)"
             }
@@ -59,16 +53,12 @@ class ViewController: UIViewController {
         
         // Save another object
         let peter: User = User.init(idCard: "987654321", name: "Peter pan")
-        
         if CDGCoreDataEngine.saveObject(peter, passwordForEncrypted: "password") {
-            
             if let dict = CDGCoreDataEngine.getObjectWithIdentifier("987654321", passwordForEncripted: "password") {
-                
                 let user: User = User(dictionary: dict)
                 string = string.appendingFormat("\n\nCreate object in Core Data (User model test):\n User id: \(user.idCard) \n User name: \(user.name)")
             }
         }
-        
         // open alert with result
         print(string)
     }
